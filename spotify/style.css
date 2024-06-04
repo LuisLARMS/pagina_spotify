@@ -1,0 +1,55 @@
+body{
+    background-color: #000000;
+    margin: 0px;
+padding: 0px;
+
+}
+.container{
+display: grid;
+min-height: 100vh;
+grid-template-areas: 
+"aside header header"
+"aside main main"
+"muestra_spotify muestra_spotify muestra_spotify "
+;
+column-gap: 10px;
+
+}
+
+header{
+background-color: rgb(153, 139, 57);
+grid-area: header;
+
+
+}
+aside{
+background-color: rgb(98, 138, 173);
+grid-area: aside;
+}
+main{
+background-color: rgb(71, 54, 167);
+grid-area: main;
+display: grid;
+
+}
+footer{
+background-color: rgb(196, 73, 145);
+align-self: self-end;
+
+}
+.muestra_Spotify{
+    background-color: aqua;
+    grid-area: muestra_spotify;
+    margin-top: 10px;
+    
+    
+}
+.biblioteca{
+    background-color: blueviolet;
+    
+}
+.container_icon{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
